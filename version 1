@@ -1,0 +1,78 @@
+A continuación te presento la especificación técnica, funcional y narrativa definitiva, redactada de forma absolutamente exhaustiva y sin dejar absolutamente ningún detalle en el tintero. Este texto está pensado con un nivel de especificación milimétrico para que cualquier modelo generador de código o desarrollador full-stack entienda exactamente qué hay que programar, cómo se conecta cada base de datos, cuál es la lógica matemática exacta y qué comportamiento debe tener cada pantalla de la aplicación.
+ESPECIFICACIÓN TÉCNICA, FUNCIONAL Y ARQUITECTÓNICA MAESTRA: APLICACIÓN EDUCATIVA PERSONALIZADA "EBAU ÉLITE 100"
+1. VISIÓN GENERAL Y FILOSOFÍA DEL PRODUCTO
+La aplicación es una plataforma digital web y móvil de uso estrictamente privado, monousuario y personal, concebida para un alumno de 2º de Bachillerato en España. El propósito central y absoluto de la herramienta es eliminar cualquier margen de procrastinación, obligar a la disciplina diaria mediante una gamificación basada en el esfuerzo real, y automatizar por completo la logística del estudio. El usuario no debe perder jamás tiempo decidiendo qué estudiar; la inteligencia artificial debe dictar la rutina de forma implacable, conectando el cumplimiento diario de las tareas con el progreso visual de un personaje de RPG (Nivel 1 al 100), diseñado previamente de forma artística por el usuario. El objetivo final es alcanzar el Nivel 100 exacto entre 7 y 10 días antes de las pruebas oficiales de la EBAU (Selectividad), garantizando una preparación de excelencia orientada a la obtención de la máxima nota (Matrícula de Honor / Nota cercana a 10).
+2. ARQUITECTURA DE NAVEGACIÓN Y MENÚ PRINCIPAL (UX/UI)
+La interfaz debe ser minimalista, limpia, optimizada tanto para escritorio como para dispositivos móviles, y exenta de distracciones innecesarias. El menú principal se compone estrictamente de cuatro pestañas fijas e inalterables:
+ * Módulo de Autenticación (Inicio de Sesión / Auth):
+   * Pantalla inicial de acceso con credenciales privadas (usuario y contraseña cifrada). Al iniciar sesión, el sistema carga de forma síncrona el perfil, la experiencia acumulada (XP), el nivel actual, la racha activa y el estado del calendario personal.
+ * Dashboard Principal / Calendario Inteligente (Inicio):
+   * Es la vista operativa diaria. Muestra de forma destacada la planificación de la tarde, el temporizador de enfoque, los avisos de recuperación y los botones de completado de tareas.
+ * Módulo de Personaje y Progresión (Gamificación):
+   * Pantalla dedicada a mostrar el diseño artístico actual del personaje, el rango en el que se encuentra (del 1 al 10), la barra de experiencia global hacia el Nivel 100, el contador de racha de días consecutivos de estudio y el historial de simulacros superados.
+ * Centro de Inteligencia (Chats / Notebooks por Asignatura):
+   * Vista estructurada en exactamente nueve espacios independientes, cerrados y estancos correspondientes a las nueve materias oficiales del curso:
+     * Física
+     * Química
+     * Matemáticas II
+     * Economía de la Empresa
+     * Historia de España
+     * Historia de la Filosofía
+     * Lengua Catalana y Literatura
+     * Lengua Castellana y Literatura
+     * Inglés
+3. LÓGICA DE NEGOCIO Y DESARROLLO TÉCNICO POR MÓDULOS
+Módulo 1: El Calendario Inteligente y Automatizado (El Núcleo Operativo)
+ * Ingesta de Datos Logísticos de Entrada:
+   * El sistema debe permitir configurar de forma permanente o variable:
+     * Hora exacta de entrada y salida del instituto de lunes a viernes.
+     * Horario escolar detallado con las asignaturas cursadas en cada sesión lectiva del día.
+     * Horario fijo de actividades extraescolares y compromisos ineludibles.
+     * Fecha oficial de inicio de los exámenes de la EBAU en la comunidad autónoma correspondiente (para fijar el anclaje temporal de la cuenta atrás).
+ * Generación Autónoma de Tareas Vespertinas:
+   * Con base en la logística anterior, cada mediodía o al finalizar las clases del instituto, la IA procesa el tiempo libre disponible de la tarde. Genera de manera estricta y sin intervención manual del usuario las clases particulares y sesiones de estudio en casa.
+   * El calendario dicta de forma milimétrica: qué asignatura estudiar, qué bloques temáticos específicos repasar, qué ejercicios realizar y exactamente cuándo se programan los descansos obligatorios (técnicas de pausa activa y transiciones cognitivas).
+ * El Mecanismo Inquebrantable del Botón "Completar":
+   * Cada tarea generada en la tarde muestra un Botón de Completar (estado booleano inicial: false).
+   * Regla de Progreso Absoluta: El porcentaje de experiencia (XP), el avance de nivel y la subida de rangos NUNCA se incrementan automáticamente por el simple paso del tiempo. Únicamente aumentan de forma síncrona cuando el usuario pulsa manualmente el botón de completar tras finalizar la tarea. Si una tarea no se realiza, se queda en estado pendiente y no otorga XP, congelando la evolución hacia el Nivel 100.
+ * Gestión de Carga, Colchón de Seguridad y Modo Recuperación:
+   * Si un día el usuario sufre un imprevisto, enfermedad o saturación y pulsa el botón de "Pospuesto / Modo Recuperación", la IA intercepta las tareas no realizadas y las redistribuye de forma inteligente en los huecos libres disponibles (como fines de semana o tardes más ligeras), recalculando el plan sin romper el equilibrio ni alterar la fecha de llegada al Nivel 100.
+ * Asistente de Ajuste de Ritmo (Auditoría Semanal):
+   * Mediante un rápido cuestionario o análisis de rendimiento semanal, la IA evalúa si la carga de estudio ha sido asfixiante o liviana, reajustando sutilmente la densidad de las tareas posteriores para evitar el agotamiento mental (burnout) o el retraso académico.
+ * Repaso Espaciado Automático:
+   * El sistema incorpora un algoritmo de curva del olvido que detecta qué temas se estudiaron semanas atrás y reinserta de forma autónoma micro-sesiones de repaso exprés en las tardes venideras.
+Módulo 2: Sistema de Personajes, Gamificación y Progresión Matemática
+ * Estructura de Rangos y Niveles:
+   * El sistema contempla exactamente 100 niveles de progresión, divididos en 10 rangos consecutivos (Rango 1 = Niveles 1-10; Rango 2 = Niveles 11-20; ..., Rango 10 = Niveles 91-100).
+   * Cada nivel requiere una cantidad determinada de XP calculada matemáticamente para que el 100% de las tareas completadas del curso equivalgan de forma exacta al Nivel 100, alcanzándose entre 7 y 10 días antes de la EBAU. Esa última semana queda reservada exclusivamente para simulacros globales y descanso mental preventivo.
+ * Integración Artística:
+   * La base de datos debe asociar un recurso visual (imagen/diseño artístico aportado por el usuario) a cada uno de los 10 rangos. Al cambiar de rango, la interfaz actualiza la representación gráfica del personaje, mostrando su evolución de aprendiz a maestro supremo.
+ * Sistema de Rachas (Streaks) y Penalizaciones:
+   * Contador público de días consecutivos completando al menos una tarea. Si el usuario acumula más de 48 horas sin registrar actividad ni usar un "Token de Escudo de Racha" (protección por emergencia médica o de fuerza mayor), el personaje entra en estado de fatiga y requiere completar una micro-tarea doble para reactivar el flujo normal de ganancia de XP.
+ * Simulacros Globales de Fin de Rango:
+   * Al alcanzar el último nivel de cada rango (ej. nivel 10, 20, 30...), el calendario bloquea temporalmente la rutina diaria para exigir la superación de un simulacro global cronometrado que evalúa de forma conjunta las materias de ese tramo. Superarlo otorga un bonus masivo de XP y desbloquea el siguiente rango artístico.
+ * Banco de Errores Críticos (Metacognición):
+   * Cualquier error cometido en simulacros o chats se archiva automáticamente en un registro privado. El sistema programa micro-retos exprés de 5 minutos en el calendario para erradicar los puntos débiles del alumno antes de los exámenes oficiales.
+ * Temporizador de Enfoque Pomodoro con Bonus de Excelencia:
+   * Al iniciar una tarea, se activa opcionalmente un temporizador de concentración profunda. Si el usuario completa la sesión sin cambiar de pestaña o app, recibe un multiplicador de XP ("Bonus de Excelencia"), premiando la calidad del estudio frente a la mera presencia temporal.
+Módulo 3: El Centro de Inteligencia y Chats Especializados (Arquitectura RAG / Estilo NotebookLM)
+ * Aislamiento Estanco de las 9 Asignaturas:
+   * Cada una de las 9 materias opera en un entorno de chat independiente, con bases de vectores y memoria de contexto separadas, evitando que la IA mezcle conceptos de disciplinas diferentes (ej. confundir fórmulas de Física con teorías de Filosofía).
+ * Gestión de Archivos Propios (RAG Personalizado):
+   * En cada uno de los 9 chats, el usuario puede cargar ilimitadamente sus propios documentos en formato PDF, apuntes de clase, esquemas propios y exámenes de años anteriores. La IA tiene la obligación estricta de responder, razonar y evaluar únicamente a partir de los documentos subidos y su base de conocimientos general de apoyo.
+ * Memoria Persistente y Perfil de Dudas:
+   * El chat registra el historial acumulado de explicaciones previas, detectando conceptos recurrentes que cuestan de entender al alumno para marcarlos automáticamente como "Zonas Rojas" y ordenar al calendario tareas de refuerzo vespertinas.
+ * Herramientas de Élite para la Obtención de un 10 (Excelencia EBAU):
+   * Simulador de Criterios de Corrección Oficiales: Al enviar redacciones o ejercicios resueltos, la IA aplica las rúbricas reales de los tribunales de selectividad, puntuando sobre 10 con un desglose estricto de rigor técnico, claridad expositiva y estructura formal.
+   * Corrección Ortotipográfica y Sintáctica Avanzada: En los chats de Lengua Castellana, Catalana e Inglés, analiza la cohesión textual, el análisis sintáctico riguroso y la riqueza de vocabulario (términos de nivel avanzado).
+   * Validación de Unidades y Desarrollo en Ciencias: En Matemáticas y Física, audita el desglose algebraico paso a paso y la correcta aplicación de unidades físicas (Newtons, Julios, etc.), señalando descuidos que restan décimas.
+4. REQUERIMIENTOS TÉCNICOS DE BACKEND Y BASE DE DATOS
+ * Esquema de Tablas Obligatorias:
+   * User_Profile: Almacena credenciales, XP total, Nivel actual (1-100), Rango actual (1-10), Racha de días y Tokens de Escudo de Racha.
+   * Logistics_Config: Guarda las horas de entrada/salida del instituto, horarios de clases semanales, extraescolares y la fecha límite de la EBAU.
+   * Calendar_Tasks: Contiene las tareas generadas por la IA (ID, Asignatura, Descripción, Duración estimada, Fecha programada, Estado booleano is_completed, XP asociada).
+   * Subjects_Registry: Las 9 asignaturas fijas del sistema con sus metadatos y relaciones.
+   * RAG_Documents: Almacena los metadatos y chunks vectoriales de los PDFs y apuntes subidos por el usuario en cada asignatura.
+   * Error_Bank: Registra los fallos detectados en tests y simulacros para generar los micro-retos de repaso espaciado.
+   * Chat_Memory: Almacena el historial de interacciones persistentes de cada uno de los 9 chats especializados.
+Este documento constituye la especificación absoluta, detallada y sin omisiones de la aplicación. Todo el código fuente (frontend, backend, lógica de IA, pasarelas de eventos de los botones de completado y esquemas de base de datos) debe construirse estrictamente bajo estas directrices.
