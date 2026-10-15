@@ -1,0 +1,47 @@
+id: quimica
+name: Química
+folder: 05-Quimica
+language: es
+
+design:
+  primary: "#5B2A86"     # violeta
+  accent: "#8E5CC2"
+  soft: "#F3EEF9"
+  background: "#FFFFFF"
+  text: "#1D1922"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Comprensión conceptual (por qué ocurre, no solo cómo se calcula)
+  - Ecuaciones químicas ajustadas y estequiometría
+  - Estructura de la materia y enlace
+  - Procedimientos de cálculo con unidades
+
+structure:
+  - Conceptos clave con definición propia
+  - Reacciones de ejemplo ajustadas
+  - Procedimiento de cálculo paso a paso (mol, masa, volumen, concentración)
+  - Ejercicio resuelto y ejercicios progresivos (soluciones al final)
+  - Errores frecuentes
+  - Preguntas de recuperación
+
+selection:
+  keep:
+    - Todas las ecuaciones y datos numéricos del original
+  drop: []
+  flag:
+    - Ecuaciones que no estén ajustadas o unidades incoherentes
+
+exercise_types:
+  - Ajustar reacciones
+  - Cálculos estequiométricos progresivos
+  - Explicar un fenómeno con el modelo de partículas
+
+quality:
+  - Ecuaciones ajustadas (conservación de átomos y carga)
+  - Unidades coherentes en cada paso
+
+classifier:
+  keywords: [mol, molar, molaridad, estequiometría, reacción, reactivo, producto, enlace, átomo, molécula, ion, ácido, base, ph, oxidación, reducción, redox, valencia, "tabla periódica", orbital, química, compuesto, disolución, "g/mol"]
+  language_bonus: null

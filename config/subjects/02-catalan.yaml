@@ -1,0 +1,53 @@
+id: catalan
+name: Catalán
+folder: 02-Catalan
+language: ca   # los apuntes se escriben en catalán
+
+design:
+  primary: "#24513A"     # verde oscuro
+  accent: "#4E8B63"
+  soft: "#F6F1E3"        # crema
+  background: "#FFFDF7"
+  text: "#1E231F"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Comentari de text literari (poesia i teatre) segons els apartats que demana el professorat
+  - Normativa, morfosintaxi, pronoms febles, connectors i lèxic
+  - Literatura catalana: autors, corrents, influències i context
+
+structure:
+  - Identificació (bloc reutilitzable per autor: obra, recull, dades bàsiques)
+  - Mètrica i tema
+  - Interpretació estrofa per estrofa en taula
+  - Figures retòriques i llenguatge amb exemples
+  - Importància dins l'obra, característiques de l'autor i influències (taula)
+  - Context biogràfic i històric
+  - Conclusió per memoritzar
+  - Preguntes de recuperació
+
+selection:
+  keep:
+    - Tots els apartats del document original, en el mateix ordre
+    - Exemples i citacions breus del poema
+    - Noms d'autors, obres, dates i influències
+  drop:
+    - Repeticions literals entre apartats (es condensen)
+  flag:
+    - Contradiccions de dates o dades dins el mateix document
+
+exercise_types:
+  - Transformació i correcció normativa (pronoms febles, barbarismes)
+  - Identificar figures retòriques en versos
+  - Redactar un apartat del comentari
+  - Preguntes de recuperació
+
+quality:
+  - Terminologia en català correcta (vers, estrofa, encavalcament, rima assonant...)
+  - Cap dada nova que no surti a l'original
+  - Les influències i característiques coincideixen amb l'original
+
+classifier:
+  keywords: [poema, poemari, recull, vers, versos, estrofa, sonet, rima, assonant, consonant, encavalcament, metàfora, antítesi, personificació, mètrica, heptasíl·labs, decasíl·labs, "rosselló-pòrcel", "imitació del foc", "quadern de sonets", modernisme, noucentisme, renaixença, rusiñol, "pronoms febles", normativa, comentari, teatre, escena, acotacions, literatura]
+  language_bonus: ca

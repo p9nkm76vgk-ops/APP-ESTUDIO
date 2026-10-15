@@ -1,0 +1,17 @@
+# Instrucción adicional según el tipo de material que se pide. Editable.
+apuntes: >
+  Apuntes desarrollados: tan completos como el original, explicados de forma sencilla,
+  con párrafos modelo para el examen, tablas, conclusión y chuleta de repaso.
+resumen: >
+  Resumen: las ideas esenciales de cada apartado en pocas líneas, sin perder ningún
+  dato que pueda preguntarse en el examen. Máximo dos páginas.
+esquema: >
+  Esquema: estructura jerárquica con listas anidadas y tablas, sin párrafos largos.
+  Cada nodo en pocas palabras.
+preguntas: >
+  Preguntas de examen: 10-15 preguntas variadas (cortas, de desarrollo y de aplicación)
+  basadas en el original, cada una con una respuesta modelo y los puntos clave que
+  no pueden faltar. Respuestas en una sección aparte al final.
+tarjetas: >
+  Tarjetas de memoria: tabla de dos columnas «Pregunta | Respuesta» con 20-40 tarjetas.
+  Una idea por tarjeta, preguntas que obliguen a recordar (no a reconocer).

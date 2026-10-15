@@ -1,0 +1,73 @@
+# Base científica de las técnicas que usa la aplicación.
+# Niveles:
+#   solida      -> respaldo amplio y replicado (revisiones y metaanálisis)
+#   contexto    -> prometedora, pero su eficacia depende del alumno, la materia o el formato
+#   diseno      -> decisión de diseño sin evidencia suficiente de efecto directo en el aprendizaje
+# No se incluyen porcentajes de mejora: dependen del estudio y no deben extrapolarse.
+
+tecnicas:
+  - id: practica_recuperacion
+    nombre: Práctica de recuperación (autoevaluación)
+    nivel: solida
+    uso_en_app: Preguntas de recuperación al final de cada documento, con respuestas separadas.
+    fuentes:
+      - "Roediger, H. L. y Karpicke, J. D. (2006). Test-enhanced learning: Taking memory tests improves long-term retention. Psychological Science, 17(3), 249-255. doi:10.1111/j.1467-9280.2006.01693.x"
+      - "Dunlosky, J., Rawson, K. A., Marsh, E. J., Nathan, M. J. y Willingham, D. T. (2013). Improving students' learning with effective learning techniques. Psychological Science in the Public Interest, 14(1), 4-58. doi:10.1177/1529100612453266 (utilidad alta)"
+
+  - id: practica_distribuida
+    nombre: Práctica distribuida (repasos espaciados)
+    nivel: solida
+    uso_en_app: Fechas de repaso sugeridas para cada documento (pendiente de implementar en fase 6).
+    fuentes:
+      - "Dunlosky et al. (2013): utilidad alta"
+      - "Cepeda, N. J. y col. (2006). Distributed practice in verbal recall tasks: A review and quantitative synthesis. Psychological Bulletin, 132(3), 354-380."
+
+  - id: ejemplos_resueltos
+    nombre: Ejemplos resueltos paso a paso
+    nivel: contexto
+    uso_en_app: Física, Química, Matemáticas y Business. Más útiles al principio del aprendizaje; con más dominio conviene pasar a resolver problemas sin ayuda (efecto de reversión de la pericia).
+    fuentes:
+      - "Atkinson, R. K., Derry, S. J., Renkl, A. y Wortham, D. (2000). Learning from examples: Instructional principles from the worked examples research. Review of Educational Research, 70(2), 181-214."
+      - "Kalyuga, S., Ayres, P., Chandler, P. y Sweller, J. (2003). The expertise reversal effect. Educational Psychologist, 38(1), 23-31."
+
+  - id: practica_intercalada
+    nombre: Práctica intercalada (mezclar tipos de problema)
+    nivel: contexto
+    uso_en_app: Ejercicios mezclados en Matemáticas y Física; identificar el valor del SE en frases mezcladas.
+    fuentes:
+      - "Dunlosky et al. (2013): utilidad moderada"
+      - "Rohrer, D. y Taylor, K. (2007). The shuffling of mathematics problems improves learning. Instructional Science, 35, 481-498."
+
+  - id: autoexplicacion
+    nombre: Autoexplicación e interrogación elaborativa (¿por qué?)
+    nivel: contexto
+    uso_en_app: Columnas «por qué» en las tablas, pasos justificados en problemas, reconstrucción de argumentos en Filosofía.
+    fuentes:
+      - "Dunlosky et al. (2013): utilidad moderada para ambas"
+
+  - id: retroalimentacion
+    nombre: Retroalimentación con explicación
+    nivel: solida
+    uso_en_app: Soluciones con justificación, no solo la respuesta.
+    fuentes:
+      - "Hattie, J. y Timperley, H. (2007). The power of feedback. Review of Educational Research, 77(1), 81-112."
+
+  - id: resumen
+    nombre: Resumir y releer
+    nivel: contexto
+    uso_en_app: Los apuntes son el punto de partida, nunca el único método; siempre van acompañados de recuperación y ejercicios.
+    fuentes:
+      - "Dunlosky et al. (2013): resumir y releer tienen utilidad baja como técnicas aisladas"
+
+  - id: diseno_visual
+    nombre: Colores por asignatura, cajas y jerarquía tipográfica
+    nivel: diseno
+    uso_en_app: Ayuda a orientarse y a distinguir tipos de información; no hay evidencia suficiente de que el color por sí mismo mejore el aprendizaje.
+    fuentes: []
+
+  - id: trucos_memoria
+    nombre: Siglas y trucos mnemotécnicos
+    nivel: contexto
+    uso_en_app: Solo para listas cerradas que hay que recordar en orden (influencias, partes). Dunlosky et al. (2013) dan utilidad baja a la mnemotecnia de palabra clave en general.
+    fuentes:
+      - "Dunlosky et al. (2013)"

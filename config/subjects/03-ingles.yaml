@@ -1,0 +1,49 @@
+id: ingles
+name: Inglés
+folder: 03-Ingles
+language: en   # rules and examples in English; short explanations may be in Spanish
+
+design:
+  primary: "#6B1E2E"     # burdeos
+  accent: "#A8475A"
+  soft: "#F7EFE3"        # crema
+  background: "#FFFDF8"
+  text: "#221A1C"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Vocabulary in context, collocations and phrasal verbs
+  - Grammar structures with form, use and common mistakes
+  - Reading comprehension strategies
+  - Writing: structure, connectors, model paragraphs
+
+structure:
+  - Key grammar: form, use, examples, common mistakes
+  - Vocabulary table (word, meaning, example sentence from context)
+  - Writing toolkit (structure + useful phrases) when relevant
+  - Practice: gap-fill, transformation, error correction (answers at the end)
+  - Retrieval questions
+
+selection:
+  keep:
+    - Example sentences from the original
+    - Every grammar rule and exception mentioned
+  drop:
+    - Long translations that replace practice
+  flag:
+    - Rules in the original that conflict with standard usage
+
+exercise_types:
+  - Sentence transformation
+  - Gap-fill with phrasal verbs or collocations
+  - Error correction with explanation
+  - Short writing task with checklist
+
+quality:
+  - Every rule has at least one example
+  - Practice answers are separated from questions
+
+classifier:
+  keywords: ["phrasal verb", "phrasal verbs", collocation, vocabulary, grammar, tense, "present perfect", "past simple", conditional, passive, "reported speech", writing, essay, reading, listening, "used to", modal, modals, english]
+  language_bonus: en

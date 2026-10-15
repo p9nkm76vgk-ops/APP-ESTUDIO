@@ -1,0 +1,49 @@
+id: fisica
+name: Física
+folder: 04-Fisica
+language: es
+
+design:
+  primary: "#1E4E8C"     # azul
+  accent: "#5B8FD1"
+  soft: "#EEF1F4"        # gris claro
+  background: "#FFFFFF"
+  text: "#1A1E24"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Modelos físicos y cuándo se pueden aplicar
+  - Magnitudes, unidades y análisis dimensional
+  - Resolución de problemas con todos los pasos
+
+structure:
+  - Idea física central del tema (qué explica el modelo y sus límites)
+  - Tabla de magnitudes (símbolo, unidad SI, significado)
+  - Fórmulas: significado de cada término, condiciones de uso, ejemplo
+  - Ejemplo resuelto con el esquema Datos → Incógnita → Principio → Fórmula y por qué → Cálculo con unidades → Comprobación
+  - Errores frecuentes
+  - Problemas para practicar (soluciones al final)
+  - Preguntas de recuperación
+
+selection:
+  keep:
+    - Todos los pasos intermedios esenciales de los ejemplos
+    - Unidades en cada resultado
+  drop: []
+  flag:
+    - Fórmulas o resultados del original que no cuadren dimensionalmente
+
+exercise_types:
+  - Problemas progresivos (de aplicación directa a combinados)
+  - Identificar qué principio aplicar
+  - Estimar orden de magnitud y comprobar el resultado
+
+quality:
+  - Coherencia de unidades en fórmulas y resultados
+  - Ningún paso esencial eliminado de los ejemplos
+  - Los números de los ejemplos coinciden con el original
+
+classifier:
+  keywords: [fuerza, velocidad, aceleración, energía, trabajo, potencia, momento, newton, julio, vatio, campo, gravitatorio, eléctrico, magnético, onda, frecuencia, cinemática, dinámica, óptica, "m/s", masa, carga, "ley de", física, movimiento, inducción]
+  language_bonus: null

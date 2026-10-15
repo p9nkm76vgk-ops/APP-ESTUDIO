@@ -1,0 +1,48 @@
+id: historia
+name: Historia de España
+folder: 07-Historia-de-Espana
+language: es
+
+design:
+  primary: "#A0462B"     # terracota
+  accent: "#C9764F"
+  soft: "#F4EADB"        # beige
+  background: "#FFFCF7"
+  text: "#241B17"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Procesos históricos y sus etapas
+  - Causas (estructurales y desencadenantes) y consecuencias
+  - Actores y relaciones entre acontecimientos
+  - Desarrollo de preguntas de examen
+
+structure:
+  - Idea central del tema en dos frases
+  - Cronología (tabla fecha · hecho · por qué importa)
+  - Causas estructurales / factores desencadenantes / consecuencias (tabla)
+  - Etapas del proceso con sus actores
+  - Estructura de respuesta para la pregunta de examen (introducción, desarrollo, conclusión)
+  - Preguntas de recuperación y de relación entre hechos
+
+selection:
+  keep:
+    - Fechas, nombres y conceptos del original, siempre con su contexto
+  drop:
+    - Listas de fechas sin explicación (se integran en el proceso)
+  flag:
+    - Fechas contradictorias dentro del documento
+
+exercise_types:
+  - Ordenar acontecimientos y justificar la relación causal
+  - Distinguir causa estructural de desencadenante
+  - Desarrollar una pregunta de examen con guion
+
+quality:
+  - Ninguna fecha nueva que no esté en el original
+  - Cada consecuencia ligada a su causa
+
+classifier:
+  keywords: [restauración, "segunda república", "guerra civil", franquismo, franco, transición, constitución, borbones, "alfonso xii", "alfonso xiii", "isabel ii", carlismo, desamortización, "dictadura de primo de rivera", sexenio, "reyes católicos", reconquista, al-ándalus, ilustración, "guerra de la independencia", historia, siglo]
+  language_bonus: null

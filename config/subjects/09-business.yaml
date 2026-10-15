@@ -1,0 +1,47 @@
+id: business
+name: Business
+folder: 09-Business
+language: en   # cambia a "es" si la asignatura se imparte en castellano
+
+design:
+  primary: "#1F6F6B"     # verde azulado
+  accent: "#2F3A40"      # gris carbón
+  soft: "#E8F2F1"
+  background: "#FFFFFF"
+  text: "#1B2124"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Definitions and business models
+  - Relationships between concepts
+  - Calculations and graphs
+  - Advantages/disadvantages and case studies
+
+structure:
+  - Key terms (term · definition · example)
+  - Models explained (what it is for, how to apply it, limitations)
+  - Worked calculation with interpretation of the result
+  - Advantages / disadvantages table
+  - New case study with decision questions (marked as created, not from the original)
+  - Retrieval questions
+
+selection:
+  keep:
+    - The original terminology and formulas
+  drop: []
+  flag:
+    - Examples added by the app are labelled as "Ejemplo añadido", never mixed with the original
+
+exercise_types:
+  - Apply a model to a new case and justify the decision
+  - Calculate and interpret ratios or break-even
+  - Evaluate (advantages vs disadvantages, with a conclusion)
+
+quality:
+  - Calculations checked
+  - Added examples clearly separated from original content
+
+classifier:
+  keywords: [business, marketing, "market share", revenue, profit, "break-even", stakeholder, shareholder, swot, pestle, "cash flow", "balance sheet", "income statement", entrepreneur, "human resources", motivation, leadership, organisation, organization, empresa, beneficio, ratio, ratios]
+  language_bonus: null

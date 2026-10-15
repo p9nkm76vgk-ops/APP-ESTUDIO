@@ -1,0 +1,20 @@
+# Datos privados de estudio: nunca al repositorio
+data/
+referencias/
+tests/privado/
+*.source.txt
+
+# Secretos
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.pytest_cache/
+
+# Sistema
+.DS_Store

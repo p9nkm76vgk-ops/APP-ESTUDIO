@@ -1,0 +1,47 @@
+id: matematicas
+name: Matemáticas
+folder: 06-Matematicas
+language: es
+
+design:
+  primary: "#14284B"     # azul marino
+  accent: "#E07A1F"      # naranja
+  soft: "#FDF1E6"
+  background: "#FFFFFF"
+  text: "#16191F"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Resolver problemas y elegir el método adecuado
+  - Entender qué significa cada operación y fórmula
+  - Detectar errores frecuentes
+
+structure:
+  - Qué problema resuelve el tema y cómo reconocerlo en un enunciado
+  - Fórmulas clave: significado, condiciones de uso, ejemplo breve
+  - Ejemplos resueltos paso a paso, con espacio entre pasos
+  - Cómo elegir el método (tabla de decisión)
+  - Errores frecuentes y cómo detectarlos
+  - Ejercicios mezclados para practicar (soluciones al final)
+  - Preguntas de recuperación
+
+selection:
+  keep:
+    - Todos los pasos de las demostraciones y ejemplos del original
+  drop: []
+  flag:
+    - Pasos del original con errores de cálculo
+
+exercise_types:
+  - Ejercicios independientes de dificultad creciente
+  - Práctica intercalada de varios tipos de problema
+  - Encontrar el error en una resolución
+
+quality:
+  - Comprobar numéricamente los ejemplos cuando sea posible
+  - Ninguna fórmula sin condiciones de uso
+
+classifier:
+  keywords: [ecuación, función, derivada, integral, límite, matriz, determinante, vector, probabilidad, estadística, polinomio, logaritmo, trigonometría, seno, coseno, teorema, demostración, sistema, incógnita, matemáticas, geometría, recta, plano]
+  language_bonus: null

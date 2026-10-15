@@ -1,0 +1,28 @@
+# Configuración general (sin secretos: las claves van en variables de entorno, ver .env.example)
+
+# Carpeta donde se guarda todo el material de estudio. Fuera del código y excluida de git.
+data_dir: ./data/Sistema-de-Estudio
+
+# Proveedor de IA: "anthropic" o "offline" (borrador extractivo sin IA, para probar el flujo)
+provider: auto          # auto = anthropic si hay clave, si no offline
+model: claude-sonnet-5-5
+max_tokens: 8000
+
+# Clasificación: por debajo de este nivel de confianza la app pregunta antes de guardar
+classification_min_confidence: 0.55
+
+# Subcarpetas de cada asignatura y qué tipo de material va en cada una
+subfolders:
+  original: Apuntes-Originales
+  apuntes: Apuntes
+  resumen: Resumenes
+  esquema: Esquemas
+  preguntas: Preguntas-de-Examen
+  tarjetas: Tarjetas
+
+output_types:
+  apuntes: Apuntes desarrollados
+  resumen: Resumen
+  esquema: Esquema
+  preguntas: Preguntas de examen
+  tarjetas: Tarjetas de memoria

@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sistema de Estudio</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<header class="top">
+  <button class="icon-btn" id="menuBtn" aria-label="Asignaturas">☰</button>
+  <h1>Sistema de Estudio</h1>
+  <span class="chip" id="modeChip">…</span>
+</header>
+
+<div class="layout">
+  <nav class="sidebar" id="sidebar">
+    <button class="nav-item active" data-subject="">Todo <span class="count" id="countAll"></span></button>
+    <div id="subjectNav"></div>
+    <hr>
+    <button class="nav-item" id="historyBtn">Historial</button>
+  </nav>
+
+  <main>
+    <!-- Subida -->
+    <section class="card" id="uploadCard">
+      <h2>Nuevo documento</h2>
+      <label class="drop" id="drop">
+        <input type="file" id="fileInput" accept=".pdf,.docx,.pptx,.txt,.md,.png,.jpg,.jpeg,.webp,.tif,.tiff" hidden>
+        <strong>Arrastra aquí un archivo</strong>
+        <span>o pulsa para elegirlo · PDF, Word, PowerPoint, texto o foto de apuntes</span>
+        <span class="file-name" id="fileName"></span>
+      </label>
+      <div class="row">
+        <label>Asignatura
+          <select id="subjectSelect"><option value="">Detectar automáticamente</option></select>
+        </label>
+        <label>Material
+          <select id="kindSelect"></select>
+        </label>
+      </div>
+      <label>Indicaciones (opcional)
+        <textarea id="extra" rows="2" placeholder="Ej.: solo entra la pregunta 2; mi profesora pide comentarios redactados"></textarea>
+      </label>
+      <button class="primary" id="processBtn" disabled>Procesar</button>
+    </section>
+
+    <!-- Progreso / confirmación / duplicado -->
+    <section class="card hidden" id="jobCard">
+      <h2 id="jobTitle">Procesando</h2>
+      <ol class="steps" id="steps"></ol>
+      <p id="jobMsg"></p>
+      <ul class="warnings" id="jobWarnings"></ul>
+      <div id="jobActions" class="actions"></div>
+    </section>
+
+    <!-- Lista -->
+    <section class="card" id="listCard">
+      <h2 id="listTitle">Documentos</h2>
+      <div id="docList" class="doc-list"><p class="muted">Todavía no hay documentos.</p></div>
+    </section>
+
+    <!-- Historial -->
+    <section class="card hidden" id="historyCard">
+      <h2>Historial</h2>
+      <div id="historyList"></div>
+    </section>
+
+    <!-- Documento -->
+    <section class="card hidden" id="docCard">
+      <div class="doc-head">
+        <div>
+          <p class="eyebrow" id="docSubject"></p>
+          <h2 id="docTitle"></h2>
+          <p class="muted" id="docMeta"></p>
+        </div>
+        <button class="icon-btn" id="closeDoc" aria-label="Cerrar">✕</button>
+      </div>
+      <div class="actions">
+        <a class="btn primary" id="pdfBtn" href="#">Descargar PDF</a>
+        <a class="btn" id="pdfView" href="#" target="_blank">Ver PDF</a>
+        <button class="btn" id="approveBtn">Marcar como definitivo</button>
+        <button class="btn" id="verifyBtn">Comprobar guardado</button>
+      </div>
+      <div class="tabs" role="tablist">
+        <button class="tab active" data-tab="preview">Vista previa</button>
+        <button class="tab" data-tab="edit">Editar</button>
+        <button class="tab" data-tab="quality">Calidad</button>
+        <button class="tab" data-tab="fix">Corregir</button>
+        <button class="tab" data-tab="goodnotes">Goodnotes</button>
+      </div>
+      <div class="tab-panel" id="tab-preview"><iframe id="previewFrame" title="Vista previa"></iframe></div>
+      <div class="tab-panel hidden" id="tab-edit">
+        <textarea id="editor" spellcheck="true"></textarea>
+        <button class="primary" id="saveEdit">Guardar como nueva versión</button>
+      </div>
+      <div class="tab-panel hidden" id="tab-quality"><div id="qualityList"></div><div id="verifyResult"></div></div>
+      <div class="tab-panel hidden" id="tab-fix">
+        <h3>Regenerar una sección</h3>
+        <div class="row">
+          <select id="sectionSelect"></select>
+          <input id="sectionInstr" placeholder="Qué quieres cambiar (opcional)">
+        </div>
+        <button class="btn" id="regenBtn">Regenerar sección</button>
+        <h3>Cambiar la asignatura</h3>
+        <div class="row">
+          <select id="moveSelect"></select>
+          <button class="btn" id="moveBtn">Mover</button>
+        </div>
+        <h3>Corrección para la IA</h3>
+        <textarea id="correctionText" rows="2" placeholder="Ej.: en Catalán, las figures retòriques siempre con un ejemplo del poema"></textarea>
+        <label class="check"><input type="checkbox" id="correctionFuture"> Aplicarla en los próximos documentos de esta asignatura</label>
+        <button class="btn" id="correctionBtn">Guardar corrección</button>
+        <h3>Borrar</h3>
+        <button class="btn danger" id="deleteBtn">Borrar este documento</button>
+      </div>
+      <div class="tab-panel hidden" id="tab-goodnotes">
+        <p>Goodnotes no tiene una forma oficial de importar archivos automáticamente. Usa este nombre y estos pasos:</p>
+        <p><strong id="gnName"></strong></p>
+        <ol id="gnSteps"></ol>
+      </div>
+      <p class="toast hidden" id="docToast"></p>
+    </section>
+  </main>
+</div>
+<script src="/static/app.js"></script>
+</body>
+</html>

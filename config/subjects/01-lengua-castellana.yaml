@@ -1,0 +1,55 @@
+id: lengua
+name: Lengua castellana
+folder: 01-Lengua-Castellana
+language: es
+
+design:
+  primary: "#1F3A5F"     # azul oscuro
+  accent: "#3E7CB1"
+  soft: "#E8F0F8"        # fondo de cajas
+  background: "#FFFFFF"
+  text: "#1B1F24"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+# Qué tiene que aprender el alumno en esta materia
+focus:
+  - Comentario de texto literario (identificar, contextualizar, temas, rasgos formales)
+  - Gramática y análisis sintáctico (valores del SE, coordinación, subordinación)
+  - Recursos literarios con ejemplos del texto
+  - Expresión escrita: respuestas redactadas y bien estructuradas
+
+# Estructura de los apuntes. Si el documento de la profesora indica preguntas de examen,
+# la estructura sigue esas preguntas en el mismo orden.
+structure:
+  - Cómo funciona el examen o qué se pide (si el original lo dice)
+  - Una sección por pregunta o apartado del original, con la explicación simplificada
+  - "Así lo escribiría en el examen": párrafo modelo redactado en primera persona del alumno
+  - Tablas para lo que se compara (estrofa por estrofa, tipos, valores)
+  - Chuleta de repaso con palabras clave que no pueden faltar
+  - Preguntas de recuperación al final
+
+selection:
+  keep:
+    - Todos los datos que puedan pedirse en el examen (fechas, obras, autores, movimientos)
+    - Ejemplos textuales del original
+    - Pruebas y procedimientos para decidir (p. ej. prueba de "a ella" para CD/CI)
+  drop:
+    - Partes marcadas por la profesora como "no estudiar" (se resumen en pocas líneas para entender)
+  flag:
+    - Datos del original que parezcan erróneos o poco fiables: se avisan, no se copian como ciertos
+
+exercise_types:
+  - Identificar el valor de una forma (con solución y justificación)
+  - Corregir errores de una frase o párrafo
+  - Redactar un apartado del comentario a partir de un fragmento
+  - Preguntas de recuperación sin mirar los apuntes
+
+quality:
+  - Cada recurso literario va con un ejemplo del texto
+  - La terminología gramatical es la del original
+  - Los párrafos modelo no añaden datos que no estén en el original
+
+classifier:
+  keywords: [sintaxis, sintáctico, oración, sujeto, predicado, complemento, "complemento directo", "complemento indirecto", pronombre, subordinada, coordinada, coordinación, yuxtaposición, "pasiva refleja", impersonal, narrador, realismo, naturalismo, modernismo, "generación del 98", "generación del 27", poema, verso, estrofa, métrica, metáfora, hipérbaton, encabalgamiento, novela, comentario, "la regenta", clarín, galdós, machado, lorca, "campos de castilla", serventesio, alejandrino, literatura]
+  language_bonus: es

@@ -1,0 +1,47 @@
+id: filosofia
+name: Historia de la Filosofía
+folder: 08-Historia-de-la-Filosofia
+language: es
+
+design:
+  primary: "#3F2459"     # morado oscuro
+  accent: "#7A5A9E"
+  soft: "#F7F3EA"        # marfil
+  background: "#FFFDF8"
+  text: "#1E1A22"
+  heading_font: Helvetica-Bold
+  body_font: Helvetica
+
+focus:
+  - Conceptos fundamentales con su significado preciso en cada autor
+  - Reconstrucción de argumentos (premisas → conclusión)
+  - Tesis, objeciones y comparación entre autores
+
+structure:
+  - Ficha del autor: contexto (si es pertinente), problema filosófico, conceptos, tesis
+  - Argumento reconstruido en pasos numerados
+  - Tabla de conceptos clave (término · definición en el autor · ejemplo)
+  - Relación y comparación con otros autores (tabla)
+  - Objeciones y respuestas
+  - Ejercicios: explicar un argumento, comparar, defender una posición
+  - Preguntas de recuperación
+
+selection:
+  keep:
+    - Terminología original del autor
+  drop: []
+  flag:
+    - Simplificaciones del original que cambien el sentido de la tesis
+
+exercise_types:
+  - Reconstruir un argumento en premisas
+  - Comparar dos autores sobre un mismo problema
+  - Comentario de un fragmento del autor
+
+quality:
+  - Ninguna simplificación que altere la posición del autor
+  - Conceptos definidos tal como los usa el autor
+
+classifier:
+  keywords: [platón, aristóteles, descartes, hume, kant, nietzsche, marx, "ortega y gasset", agustín, tomás, metafísica, epistemología, ética, ontología, razón, alma, idea, sustancia, empirismo, racionalismo, "imperativo categórico", filosofía, filósofo, tesis, argumento]
+  language_bonus: null
